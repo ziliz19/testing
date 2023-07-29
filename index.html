@@ -717,7 +717,7 @@
 			<button class="button" id="buttonA1F" style="left: 50%; top: 80%" onclick="ButtonA1F()">下一步</button>
 		</section>
 		<section id="sectionA2" class="section" style="display:none">
-			<p class="p1" id="statetext3">請選擇您平孰悉的語言：</p>
+			<p class="p1" id="statetext3">請選擇您平常孰悉的語言</p>
 			<p class="p2" id="rectext3"></p>
 			<!--	  <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>-->
 			<!--	  <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>-->
@@ -729,7 +729,7 @@
 			<!--    <button class="button" id="button2" style="left: 150px" onclick="PostButton()" >Post </button>-->
 		</section>
 		<section id="sectionA3" class="section" style="display:none">
-			<p class="p1" id="statetextA3">請輸入您的個人資料：</p>
+			<p class="p1" id="statetextA3">請輸入您的個人資料</p>
 			<p class="p1" id="subtextA3" style="top:15%; font-size: 14pt">可以請志工或照護者協助填寫</p>
 			<p class="p2" id="rec"></p>
 			<div style="top:50px;">
@@ -790,6 +790,7 @@
 					</div>
 				</div>
 			</div>
+			<button class="button" id="buttonA3F" style="left: 50%; top: 80%" onclick="ButtonA3F()">下一步</button>
 			<button class="button" id="buttonA4F" style="left: 50%; top: 80%" onclick="ButtonA4F()" hidden>確　認</button>
 		</section>
 		<section id="sectionA5" class="section" style="display:none">
@@ -845,7 +846,7 @@
 				<button class="buttons" id="buttonB137" onclick="Buttons('answerB13','星期日')">星期日</button>
 				<button class="buttons" id="buttonB138" onclick="Buttons('answerB13','不知道')">不知道</button>
 			</div>
-			<button class="button" id="buttonB13F" style="left: 50%; top: 80%" onclick="Buttons13F()">送出答案</button>
+			<button class="button" id="buttonB13F" style="left: 50%; top: 80%" onclick="ButtonB13F()">送出答案</button>
 		</section>
 	</div>
 	<div name="B2">
@@ -1005,7 +1006,7 @@
 				<button class="buttons" id="buttonB433" onclick="Buttons2('answerB44','房子,')">房子</button>
 				<button class="buttons" id="buttonB434" onclick="Buttons2('answerB44','機車,')">機車</button>
 				<button class="buttons" id="buttonB435" onclick="Buttons2('answerB44','別墅,')">別墅</button>
-				<button class="buttons" id="buttonB436" onclick="Buttons2('answerB44','領帶紙,')">領帶</button>
+				<button class="buttons" id="buttonB436" onclick="Buttons2('answerB44','領帶,')">領帶</button>
 				<button class="buttons" id="buttonB437" onclick="Buttons2('answerB44','汽車,')">汽車</button>
 				<button class="buttons" id="buttonB438" onclick="Buttons2('answerB44','別針,')">別針</button>
 				<button class="buttons" id="buttonB439" onclick="Buttons2('answerB44','蘋果,')">蘋果</button>
@@ -1182,7 +1183,7 @@
 				<button class="buttons" id="buttonB433" onclick="Buttons2('answerB73','房子,')">房子</button>
 				<button class="buttons" id="buttonB434" onclick="Buttons2('answerB73','機車,')">機車</button>
 				<button class="buttons" id="buttonB435" onclick="Buttons2('answerB73','別墅,')">別墅</button>
-				<button class="buttons" id="buttonB436" onclick="Buttons2('answerB73','領帶紙,')">領帶</button>
+				<button class="buttons" id="buttonB436" onclick="Buttons2('answerB73','領帶,')">領帶</button>
 				<button class="buttons" id="buttonB437" onclick="Buttons2('answerB73','汽車,')">汽車</button>
 				<button class="buttons" id="buttonB438" onclick="Buttons2('answerB73','別針,')">別針</button>
 				<button class="buttons" id="buttonB439" onclick="Buttons2('answerB73','蘋果,')">蘋果</button>
@@ -1904,6 +1905,7 @@
 			CallinEverySection();
 		}
 		function ButtonA6F() {
+			someFunction(){videoStopper("videoContainer");
 			document.getElementById("videoA6").pause();
 			document.getElementById('sectionA6').style = "display:none";
 			document.getElementById('sectionA7').style = "display:block";
